@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="toolbox-container">
+        <div class="toolbox-priority-container">
+            <div class="color p1 hover"></div>
+            <div class="color p2 hover"></div>
+            <div class="color p3 hover"></div>
+            <div class="color p4 hover "></div>
+        </div>
+        <div class="action-btn-container">
+            <div class="add-btn"><i class="fa-solid fa-plus fa-bounce fa-lg" style="color: #ffffff;"></i></div>
+            <!-- <div class="remove-btn"><i class="fa-solid fa-xmark mark1 fa-bounce fa-xs" style="color: #ffffff;"></i></div> -->
+        </div>
+    </div>
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- <div class="ticket-container" id="">
+            <div class="ticket-color ${ticketcolor}"></div>
+            <div class="ticket-id">#${ticketid}</div>
+            <div class="ticket-task">${tickettask}</div>
+            <div class="ticket-lock"> <i class="fa-solid fa-lock fa-2xs" style="color: #000000;"></i><i class="fa-solid fa-xmark remove fa-2xs" style="color: #ffffff;"></i></div>
+        </div> -->
+
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <textarea class="textarea-container" spellcheck="false" placeholder="Enter ur task" wrap="hard" cols="20"></textarea>
+            <div class="priority-color-container">
+                <div class="p1 box hover"></div>
+                <div class="p2 box hover"></div>
+                <div class="p3 box hover"></div>
+                <div class="p4 box hover border"></div>
+                <button class="submit" value="submit" name="submit" id="sub">create</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* div is a block lvl element so width is useless */
+.toolbox-container {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3rem;
+    background-color: cornflowerblue;
+    /* margin-bottom: %; */
+}
+
+.remove {
+
+    display: none;
+}
+
+.toolbox-priority-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 6px;
+    height: 2rem;
+    width: 30%;
+    background-color: steelblue;
+    align-items: center;
+}
+
+.action-btn-container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6px;
+    height: 2rem;
+    width: 10%;
+    background-color: steelblue;
+}
+
+.color {
+    margin: 4px;
+    height: 50%;
+    width: 10%;
+    border-radius: 2rem;
+
+    /* background-color:#192a56; */
+
+}
+
+.p1 {
+
+
+    background-color: #EA2027;
+}
+
+.p2 {
+    background-color: #4cd137;
+
+}
+
+.p3 {
+    background-color: #FFC312;
+}
+
+.p4 {
+    background-color: #4b4b4b;
+}
+
+.modal-container {
+    display: flex;
+
+
+}
+
+.modal {
+    /* box-shadow: 2rem #303952; */
+    display: none;
+    flex-direction: row;
+    height: 31vh;
+    width: 40vw;
+    background-color: steelblue;
+    /* margin: 10%; */
+    position: absolute;
+    top: calc((100vh - 31vh)/2);
+    left: calc((100vw - 40vw)/2);
+}
+
+.priority-color-container {
+    position: relative;
+    height: 100%;
+    width: 20%;
+    /* border-radius: 66rem; */
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box {
+    height: 10%;
+    width: 60%;
+    border-radius: 2rem;
+}
+
+.textarea-container {
+    background-color: #95afc0;
+    padding: 0.5rem;
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: x-large;
+    position: relative;
+}
+
+.border {
+    border: 3px solid;
+    border-color: #f5f6fa;
+}
+
+.ticket-container {
+    
+border-radius: 3rem;
+    
+height: 8.5rem;
+    
+width: 14rem;
+    
+/* background-color: #4cd137; */
+    
+/* margin-bottom: 6%; */
+    
+transition: transform 0.3s ease;
+    
+margin-bottom: 10%;
+}
+.ticket-container:hover {
+    transform: translateY(-10px);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+.hover
+{
+    transition: transform 0.1s ease;
+}
+.hover:hover
+{
+    transform: translateY(-10px);
+    border-radius: 10px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.ticket-color {
+    cursor: pointer;
+    height: 0.4rem;
+    width: 100%;
+    /* background-color:#a29bfe; */
+}
+
+.ticket-id {
+    text-align: center;
+    background-color: #dfe6e9;
+    width: 100%;
+    height: 1.5rem;
+    font-size: large;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.fa-lock {
+    margin-right: 2px;
+    /* margin-bottom: 3px; */
+}
+
+.ticket-lock {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 8%;
+    width: 100%;
+    /* align-items: flex-end; */
+    /* font-size:xx-small; */
+    background-color: #dcdde1;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    top: 30px;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submit {
+    cursor: pointer;
+    height: 15%;
+    width: 90%;
+    font-size: 0.4em;
+    padding: 0%;
+    border-radius: 10rem;
+    outline: none;
+    font-size: 1rem;
+    border-color: cornflowerblue;
+    background-color: antiquewhite;
+}
+
+.ticket-task {
+    /* cursor: pointer; */
+    outline: none;
+    display: flex;
+    white-space: normal;
+    text-overflow: ellipsis;
+    height: calc(100% + 0.7rem - 0.8rem);
+    width: 100%;
+    font-size: LARGE;
+    background-color: #dcdde1;
+    border: none;
+    resize: none;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+textarea[disabled] {
+    white-space: normal;
+    overflow-wrap: break-word;
+    overflow: auto;
+    overflow-wrap: break-word;
+    /* overflow: auto; */
+}
