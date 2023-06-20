@@ -134,20 +134,14 @@ body {
 }
 
 .ticket-container {
-    
-border-radius: 3rem;
-    
-height: 8.5rem;
-    
-width: 14rem;
-    
-/* background-color: #4cd137; */
-    
-/* margin-bottom: 6%; */
-    
-transition: transform 0.3s ease;
-    
-margin-bottom: 10%;
+    border-radius: 3rem;
+    height: 8.5rem;
+    width: 14rem;
+    /* background-color: #4cd137; */
+    /* margin-bottom: 6%; */
+    transition: transform 0.3s ease;
+    /* margin-bottom: 10%; */
+    margin: 3rem;
 }
 .ticket-container:hover {
     transform: translateY(-10px);
