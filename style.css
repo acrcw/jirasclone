@@ -244,7 +244,7 @@ textarea[disabled] {
     overflow-wrap: break-word;
     /* overflow: auto; */
 }
-@media screen and (min-width:425px) and (max-width:768px)
+@media screen and (min-width:320px) and (max-width:768px)
 {
     .modal{
             /* display: none; */
