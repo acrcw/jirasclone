@@ -244,3 +244,30 @@ textarea[disabled] {
     overflow-wrap: break-word;
     /* overflow: auto; */
 }
+@media screen and (min-width:425px) and (max-width:768px)
+{
+    .modal{
+            /* display: none; */
+    /* flex-direction: row; */
+    height: 21vh;
+    width: 68vw;
+    background-color: steelblue;
+    /* margin: 10%; */
+    position: fixed;
+    top: calc((100vh - 21vh)/2);
+    left: calc((100vw - 68vw)/2);
+    }
+    .submit{
+        font-size: 0.6rem;
+    }
+    .border{
+        border: 1px solid;
+        border-color: #f5f6fa;
+    }
+    .textarea-container{
+        font-size: medium;
+    }
+    .toolbox-priority-container{
+        width: 77%
+    }
+    }
